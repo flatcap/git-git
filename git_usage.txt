@@ -7,7 +7,7 @@ git b -m old new
 
 git back
 
-git checkout 
+git checkout
 git checkout -b  probe
 
 git cherry-pick -p 7195fd13
@@ -35,7 +35,7 @@ git ds --cached
 git fresh-branch tree2
 
 git hide Makefile
-git hidden 
+git hidden
 
 git ignore /main
 
@@ -82,7 +82,7 @@ git rev-list HEAD --count
 git rev-parse --short=7 HEAD
 git rev-parse HEAD~3^2^2~3
 
-git rm log2.txt 
+git rm log2.txt
 
 git s
 
@@ -96,11 +96,11 @@ git sl
 
 git st
 
-git stash 
+git stash
 git stash apply stash@{0}
 git stash drop stash@{0}
 git stash list
-git stash pop 
+git stash pop
 git stash pop stash@{0}
 git stash save
 git stash save "read data"
@@ -110,11 +110,9 @@ git stash show -p
 git tag
 git tag -n1
 
-git tidy 
+git tidy
 
 git unhide Makefile
 
 git update-ref HEAD ee68049
-
-gitstats . stats
 
