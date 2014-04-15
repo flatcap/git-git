@@ -1,0 +1,120 @@
+git add file.txt
+git add --patch
+
+git b
+git b -d del
+git b -m old new
+
+git back
+
+git checkout 
+git checkout -b  probe
+
+git cherry-pick -p 7195fd13
+
+git clean -xdf
+git clean -xdn
+
+git clone --bare dparted d.git
+git clone dparted TEST
+
+git commit
+git commit --amend
+git commit -am "add asserts"
+git commit -anm "add macros to variadic templates"
+
+git d
+git d --cached
+git d -U0
+
+git describe --abbrev=4 --dirty --always
+
+git ds
+git ds --cached
+
+git fresh-branch tree2
+
+git hide Makefile
+git hidden 
+
+git ignore /main
+
+git init .
+
+git l
+
+git lca
+
+git ll
+
+git log
+
+git ls-files
+
+git ls-rev
+
+git ls-tree
+
+git merge --no-ff --no-commit tree
+
+git mergetool
+
+git mv *.cpp *.h newlog/
+
+git pull
+git pull --all
+
+git push
+git push -u origin assert
+
+git rebase --abort
+git rebase --committer-date-is-author-date master
+git rebase --continue
+
+git remote add origin git:work/vim/deleteto
+git remote remove origin
+
+git reset
+git reset --hard HEAD
+
+git rev-list HEAD --count
+
+git rev-parse --short=7 HEAD
+git rev-parse HEAD~3^2^2~3
+
+git rm log2.txt 
+
+git s
+
+git sb
+
+git show 2b7a8cc:tree.cpp > tree.cpp
+
+git since "1 day"
+
+git sl
+
+git st
+
+git stash 
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash list
+git stash pop 
+git stash pop stash@{0}
+git stash save
+git stash save "read data"
+git stash save -p gpt
+git stash show -p
+
+git tag
+git tag -n1
+
+git tidy 
+
+git unhide Makefile
+
+git update-ref HEAD ee68049
+
+gitstats . stats
+
