@@ -110,9 +110,30 @@ git stash show -p
 git tag
 git tag -n1
 
-git tidy
-
 git unhide Makefile
 
 git update-ref HEAD ee68049
 
+l    = log --branches --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd)%Creset%C(yellow)%d%Creset' --abbrev-commit --date=relative -n 20
+ll   = log --branches --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd)%Creset%C(yellow)%d%Creset' --abbrev-commit --date=relative
+ls   = log --branches --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd)%Creset%C(yellow)%d%Creset' --abbrev-commit --date=relative --stat
+s    = !git stash list && git status --short
+sb   = !git branch --verbose --verbose  & git stash list && git status --short
+st   = status
+d    = diff
+ds   = diff --stat
+b    = branch --verbose --verbose
+lca  = !git merge-base master $(git rev-parse --abbrev-ref HEAD) | cut -b-7
+since= log --branches --pretty=format:'%Cred%h%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --date=relative --since
+
+hide   = update-index --assume-unchanged
+unhide = update-index --no-assume-unchanged
+hidden = "!git ls-files -v | sed -n '/^[a-z]/{s/^..//;p}'"
+
+alias a='make -s && ./dparted -x 1000'
+alias c='make -s && cgdb dparted'
+alias h='make -s && ./dparted -h'
+alias l='make -s && ./dparted -l'
+alias m='make'
+alias t='cd ~/torrent; clear; ls -gG'
+alias u='cddir ~/upstream'
